@@ -10,3 +10,5 @@ export default function Gallery() {
     </div>
   );
 }
+
+// Components inside of components

@@ -3,10 +3,14 @@ import { sculptureList } from '../../data/data';
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(false); // changes and will state in that state
 
   function handleNextClick() {
-    setIndex(index + 1);
+    if (index >= sculptureList.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
   }
 
   function handleMoreClick() {

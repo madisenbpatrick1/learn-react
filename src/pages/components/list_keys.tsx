@@ -8,7 +8,7 @@ const people = [
 
 export default function List() {
   const listItems = people.map((person, index) =>
-    <li key={index}>{person}</li>
+    <li key={index}>{person}</li> // key prop added here so that it can recognize each item 
   );
   return <ul>{listItems}</ul>;
 }

@@ -9,6 +9,8 @@ const people = [
 export default function List() {
   const listItems = people.map(person =>
     <li>{person}</li>
+    // return elements as a list item tag
   );
   return <ul>{listItems}</ul>;
+  // turns what ever into a unordered list
 }

@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { sculptureList } from '../../data/data';
 
 export default function Gallery() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0); // useState hook to update, when index changes it will be updated
 
   function handleClick() {
-    setIndex(index + 1);
+    setIndex(index + 1); // function and change index
   }
 
   let sculpture = sculptureList[index];

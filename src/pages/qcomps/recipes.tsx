@@ -12,6 +12,7 @@ export const recipes = [{
   ingredients: new Set(['chickpeas', 'olive oil', 'garlic cloves', 'lemon', 'tahini'])
 }];
 
+
 export default function RecipeList() {
   return (
     <div>
